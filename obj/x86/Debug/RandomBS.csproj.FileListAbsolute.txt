@@ -1,0 +1,4 @@
+C:\Users\160210045\Desktop\RandomBS\RandomBS\bin\Debug\RandomBS.exe
+C:\Users\160210045\Desktop\RandomBS\RandomBS\bin\Debug\RandomBS.pdb
+C:\Users\160210045\Desktop\RandomBS\RandomBS\obj\x86\Debug\RandomBS.exe
+C:\Users\160210045\Desktop\RandomBS\RandomBS\obj\x86\Debug\RandomBS.pdb
