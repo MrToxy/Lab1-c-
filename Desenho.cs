@@ -5,10 +5,14 @@ using System.Text;
 
 namespace RandomBS
 {
-    class Desenho : IMovimentavel
+    public class Desenho : IMovimentavel
     {
         private List<Figura> Figuras = new List<Figura>();
 
+		public Desenho()
+		{
+			Figuras.add(Figura NovaFigura = new Figura();
+		}
         public void AdicionarFiguras(Figura NovaFigura)
         {
             Figuras.Add(NovaFigura);
@@ -31,7 +35,10 @@ namespace RandomBS
 
         public void Mover(int dx, int dy)
         {
-            throw new NotImplementedException();
+           foreach(var figura in Figuras)
+		   {
+		     figura.Mover(dx,dy);
+		   }
         }
 
         public void GetArea()

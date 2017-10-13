@@ -9,7 +9,17 @@ namespace RandomBS
     {
         private int raio { get; set; }
 
-        public Circulo(int raio)
+        public Circulo(int raio, int x, int y) : base(x,y)
+        {
+            if (raio <= 0)
+            {
+                Console.WriteLine("Impossivel definir valor <= 0");
+                return;
+            }
+            this.raio = raio;
+        }
+		
+		 public Circulo(int raio)
         {
             if (raio <= 0)
             {
@@ -20,7 +30,7 @@ namespace RandomBS
         }
         public override string ToString()
         {
-            return raio.ToString();
+            return base.toString() + "Raio: " + this.raio;
         }
 
         public double getArea()
@@ -32,5 +42,10 @@ namespace RandomBS
         {
             throw new NotImplementedException();
         }
+		
+		public void setRaio(int raio)
+		{
+			return this.raio;
+		}
     }
 }
